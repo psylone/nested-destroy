@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+small:
+  size: 55
+  person: batman
+
+medium:
+  size: 56
+  person: t_1000
