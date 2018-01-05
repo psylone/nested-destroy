@@ -1,24 +1,12 @@
-# README
+# Overview
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+`NestedDestroy` demonstrates the behavior of the associated object which was destroyed with the nested attributes:
 
-Things you may want to cover:
+```ruby
+person.update(hat_attributes: { _destroy: true })
+person.hat # => returns frozen Hat object
+```
 
-* Ruby version
+# Test Suite
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Run the `bin/rails test:models` command to see the corresponding test.
